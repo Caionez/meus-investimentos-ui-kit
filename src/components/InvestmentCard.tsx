@@ -42,18 +42,18 @@ export const InvestmentCard = ({ investment, onEdit, onDelete }: InvestmentCardP
                     className="w-3 h-3 rounded-full"
                     style={{ backgroundColor: bankColor }}
                   />
-                  <span className="text-sm font-medium text-muted-foreground">
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                     {investment.bank}
                   </span>
-                  <span className="text-xs bg-accent text-accent-foreground px-2 py-1 rounded-full">
+                  <span className="text-xs bg-accent text-gray-800 dark:text-gray-200 px-2 py-1 rounded-full font-medium">
                     {investment.type}
                   </span>
                 </div>
-                <h3 className="font-semibold text-foreground truncate">
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 truncate">
                   {investment.name}
                 </h3>
                 {investment.yield && (
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
                     {investment.yield}
                   </p>
                 )}
@@ -84,14 +84,14 @@ export const InvestmentCard = ({ investment, onEdit, onDelete }: InvestmentCardP
             {/* Values */}
             <div className="grid grid-cols-2 gap-4 mb-3">
               <div>
-                <p className="text-xs text-muted-foreground">Investido</p>
-                <p className="font-semibold text-sm">
+                <p className="text-xs text-gray-600 dark:text-gray-400">Investido</p>
+                <p className="font-semibold text-sm text-gray-900 dark:text-gray-100">
                   {formatCurrency(investment.investedValue)}
                 </p>
               </div>
               <div>
-                <p className="text-xs text-muted-foreground">Atual</p>
-                <p className="font-semibold text-sm">
+                <p className="text-xs text-gray-600 dark:text-gray-400">Atual</p>
+                <p className="font-semibold text-sm text-gray-900 dark:text-gray-100">
                   {formatCurrency(investment.currentValue)}
                 </p>
               </div>
@@ -99,7 +99,7 @@ export const InvestmentCard = ({ investment, onEdit, onDelete }: InvestmentCardP
 
             {/* Profitability */}
             <div className="flex items-center justify-between text-sm">
-              <span className="text-muted-foreground">
+              <span className="text-gray-600 dark:text-gray-400">
                 {investment.days} dias
               </span>
               <span className={`font-semibold ${isProfit ? 'text-green-600' : 'text-red-600'}`}>
@@ -108,7 +108,7 @@ export const InvestmentCard = ({ investment, onEdit, onDelete }: InvestmentCardP
             </div>
 
             {/* Dates */}
-            <div className="flex justify-between text-xs text-muted-foreground mt-2 pt-2 border-t">
+            <div className="flex justify-between text-xs text-gray-600 dark:text-gray-400 mt-2 pt-2 border-t">
               <span>Aplicação: {investment.applicationDate}</span>
               <span>Vencimento: {investment.maturityDate}</span>
             </div>
