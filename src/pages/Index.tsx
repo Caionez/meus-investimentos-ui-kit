@@ -65,8 +65,8 @@ const Index = () => {
                   <Wallet className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground">Total Investido</p>
-                  <p className="font-semibold text-sm">
+                  <p className="text-xs text-gray-600 dark:text-gray-400">Total Investido</p>
+                  <p className="font-semibold text-sm text-gray-900 dark:text-gray-100">
                     {formatCurrency(totalInvested)}
                   </p>
                 </div>
@@ -81,8 +81,8 @@ const Index = () => {
                   <TrendingUp className="h-5 w-5 text-green-600" />
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground">Valor Atual</p>
-                  <p className="font-semibold text-sm">
+                  <p className="text-xs text-gray-600 dark:text-gray-400">Valor Atual</p>
+                  <p className="font-semibold text-sm text-gray-900 dark:text-gray-100">
                     {formatCurrency(totalCurrent)}
                   </p>
                 </div>
@@ -97,7 +97,7 @@ const Index = () => {
                   <Target className="h-5 w-5 text-blue-600" />
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground">Lucro</p>
+                  <p className="text-xs text-gray-600 dark:text-gray-400">Lucro</p>
                   <p className="font-semibold text-sm text-green-600">
                     {formatCurrency(totalProfit)}
                   </p>
@@ -113,7 +113,7 @@ const Index = () => {
                   <Calendar className="h-5 w-5 text-orange-600" />
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground">Rentabilidade</p>
+                  <p className="text-xs text-gray-600 dark:text-gray-400">Rentabilidade</p>
                   <p className="font-semibold text-sm text-green-600">
                     +{totalProfitability.toFixed(2)}%
                   </p>
@@ -126,7 +126,7 @@ const Index = () => {
         {/* Distribution by Type */}
         <Card className="md3-elevation-1">
           <CardHeader>
-            <CardTitle className="text-lg">Distribuição por Tipo</CardTitle>
+            <CardTitle className="text-lg text-gray-900 dark:text-gray-100">Distribuição por Tipo</CardTitle>
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={200}>
@@ -154,7 +154,7 @@ const Index = () => {
         {/* Distribution by Bank */}
         <Card className="md3-elevation-1">
           <CardHeader>
-            <CardTitle className="text-lg">Distribuição por Banco</CardTitle>
+            <CardTitle className="text-lg text-gray-900 dark:text-gray-100">Distribuição por Banco</CardTitle>
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={200}>
@@ -182,7 +182,7 @@ const Index = () => {
         {/* Monthly Evolution */}
         <Card className="md3-elevation-1">
           <CardHeader>
-            <CardTitle className="text-lg">Evolução Mensal</CardTitle>
+            <CardTitle className="text-lg text-gray-900 dark:text-gray-100">Evolução Mensal</CardTitle>
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={200}>
