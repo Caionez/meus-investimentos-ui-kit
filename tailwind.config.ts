@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,27 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Bank specific colors
+				nubank: 'rgb(123, 33, 203)',
+				inter: 'rgb(220, 124, 52)',
+				xp: 'rgb(25, 25, 25)',
+				sofisa: 'rgb(81, 169, 148)',
+				icatu: 'rgb(23, 48, 89)',
+				// Material Design 3 colors
+				md3: {
+					primary: 'rgb(103, 80, 164)',
+					'on-primary': 'rgb(255, 255, 255)',
+					'primary-container': 'rgb(234, 221, 255)',
+					'on-primary-container': 'rgb(33, 0, 93)',
+					secondary: 'rgb(98, 91, 113)',
+					'on-secondary': 'rgb(255, 255, 255)',
+					'secondary-container': 'rgb(232, 222, 248)',
+					'on-secondary-container': 'rgb(29, 25, 43)',
+					surface: 'rgb(255, 251, 255)',
+					'on-surface': 'rgb(28, 27, 31)',
+					'surface-variant': 'rgb(231, 224, 236)',
+					'on-surface-variant': 'rgb(73, 69, 78)',
 				}
 			},
 			borderRadius: {
@@ -84,11 +106,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out'
 			}
 		}
 	},
