@@ -52,7 +52,7 @@ const Index = () => {
   const COLORS = ['#8B5CF6', '#06B6D4', '#10B981', '#F59E0B', '#EF4444'];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-20">
       <Navigation title="Dashboard" />
 
       <div className="p-4 space-y-6">

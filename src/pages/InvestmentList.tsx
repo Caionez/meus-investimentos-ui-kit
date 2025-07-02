@@ -5,6 +5,7 @@ import { Navigation } from '@/components/Navigation';
 import { InvestmentCard } from '@/components/InvestmentCard';
 import { useInvestments } from '@/contexts/InvestmentContext';
 import { Button } from '@/components/ui/button';
+import { Plus } from 'lucide-react';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -48,8 +49,8 @@ const InvestmentList = () => {
   const investmentToDeleteData = investments.find(inv => inv.id === investmentToDelete);
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation title="Meus Investimentos" showAdd />
+    <div className="min-h-screen bg-background pb-20">
+      <Navigation title="Meus Investimentos" />
       
       <div className="p-4">
         {investments.length === 0 ? (
@@ -77,6 +78,15 @@ const InvestmentList = () => {
           </div>
         )}
       </div>
+
+      {/* Floating Action Button */}
+      <Button
+        onClick={() => navigate('/investments/add')}
+        className="fixed bottom-20 right-4 z-40 h-14 w-14 rounded-full shadow-lg md3-elevation-3"
+        size="icon"
+      >
+        <Plus className="h-6 w-6" />
+      </Button>
 
       {/* Delete Confirmation Dialog */}
       <AlertDialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
