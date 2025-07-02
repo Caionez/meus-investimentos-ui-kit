@@ -54,7 +54,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation title="Dashboard" />
-      
+
       <div className="p-4 space-y-6">
         {/* Summary Cards */}
         <div className="grid grid-cols-2 gap-4">
